@@ -45,7 +45,7 @@ def probability_pct_to_float(probability):
 def main(request):
     r = get_mvp_odds_page()
     output = parse_page(r)
-    return json.dumps(output)
+    return f"{json.dumps(output)}\n"
 
 
 if __name__ == '__main__':
